@@ -29,6 +29,7 @@ def register():
 
 def unregister():
     bpy.utils.unregister_class(ObjectMoveX)
+    bpy.types.VIEW3D_MT_object.remove(menu_func)
 
 # Allow running directly from Text Editor without installing
 if __name__ == "__main__":
