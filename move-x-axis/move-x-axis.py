@@ -4,7 +4,7 @@ bl_info = {
     "category": "Object",
 }
 
-import bpy
+import bpy                              # pylint: disable=import-error
 
 class ObjectMoveX(bpy.types.Operator):
     """Object Moving Script"""          # Tooltip for menu items and buttons
